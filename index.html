@@ -134,72 +134,92 @@ color: white;
 <button class="button button1" onClick="arts()"><h1>Art</h1></button>
 <div id="art">
 	<div class="slideshow" align="center">
-		<div class="mySlides1" align="center">
+		<a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  		<a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+		<div class="picImg" align="center">
 			<img class="pic" src="Skeleton shopkeeper.png" alt="Skeleton shopkeeper" height="25%" width = "25%">
 		</div>
-		<div class="mySlides1" align="center">
+		<div class="picImg" align="center">
 			<img class="pic" src="Golem.png" alt="Golem" height="25%" width = "25%">
 		</div>
-		<div class="mySlides1" align="center">
+		<div class="picImg" align="center">
 			<img class="pic" src="Belmont.png" alt="Belmont" height="25%" width = "25%">
 		</div>
-		<div class="mySlides1" align="center">
+		<div class="picImg" align="center">
 			<img class="pic" src="Chopp.png" alt="Chopp" height="25%" width = "25%">
 		</div>
-		<div class="mySlides1" align="center">
+		<div class="picImg" align="center">
 			<img class="pic" src="Cern.png" alt="Cern" height="25%" width = "25%">
 		</div>
-		<div class="mySlides1" align="center">
+		<div class="picImg" align="center">
 			<img class="pic" src="Hippie wizard.png" alt="Hippy Wizard" height="25%" width = "25%">
 		</div>
-		<div class="mySlides1" align="center">
+		<div class="picImg" align="center">
 			<img class="pic" src="MUshroom.png" alt="Mushroom" height="25%" width = "25%">
 		</div>
-		<div class="mySlides1" align="center">
+		<div class="picImg" align="center">
 			<img class="pic" src="Oberon.png" alt="Oberon" height="25%" width = "25%">
 		</div>
-		<div class="mySlides1" align="center">
+		<div class="picImg" align="center">
 			<img class="pic" src="Pirate.png" alt="Pirate" height="25%" width = "25%">
 		</div>
-		<div class="mySlides1" align="center">
+		<div class="picImg" align="center">
 			<img class="pic" src="Skeltal.png" alt="Skeltal" height="25%" width = "25%">
 		</div>
-		<div class="mySlides1" align="center">
+		<div class="picImg" align="center">
 			<img class="pic" src="Sans.png" alt="Sans" height="25%" width = "25%">
 		</div>
-		<div class="mySlides1" align="center">
+		<div class="picImg" align="center">
 			<img class="pic" src="Dystopian Robots.png" alt="Dystopian Robots" height="50%" width = "50%">
 		</div>
-		<div class="mySlides1" align="center">
+		<div class="picImg" align="center">
 			<img class="pic" src="Space-Logo.png" alt="Space" height="25%" width = "25%">
 		</div>
-	 	<a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-  		<a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
 	</div>
 </div>
 <button class="button button2" onClick="animations()"><h1>Animation</h1></button>
 <div id="animation">
 	<div class="slideshow" align="center">
-		<div class="mySlides2 fade">
+		<a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+		<div class="aniImg fade">
 			<video height="50%" width="50%" controls>
 				<source src = "Atk_Animation.mp4" type="video/mp4">
 			</video>
 		</div>
-		<div class="mySlides2 fade">
+		<div class="aniImg fade">
 			<video height="50%" width="50%" controls>
 				<source src = "3dAnimation.mp4" type="video/mp4">
 			</video>
 		</div>
-		<div class="mySlides2 fade">
+		<div class="aniImg fade">
 			<video height="50%" width="50%" controls>
 				<source src="Walk.mp4" type="video/mp4">
 			</video>
 		</div>
 	</div>
-  	<a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-	<a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
-</div>
 
+</div>
+<button class="button button1">Models</button>
+<div id="model">
+	<div class="slideshow" align="center">
+	<a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+		<div class="modelImg fade">
+			<img class="pic" src="FinalOutput.png" alt="Wayfinder" height="50%" width="50%">
+		</div>
+		<div class="modelImg fade">
+			<video height = "50%" width = "50%" controls>
+				<source src="Dinosaur.mp4" type="video/mp4"
+			</video>
+		</div>
+		<div class="modelImg fade">
+			<video height = "50%" width = "50%" controls>
+				<source src="RobotDab.mp4" type="video/mp4"
+			</video>
+		</div>
+	</div>
+</div>
 
 </body>
 </html>
@@ -221,7 +241,7 @@ color: white;
 		}
 	}
 var slideIndex = [1,1];
-var slideId = ["mySlides1", "mySlides2"]
+var slideId = ["picImg", "aniImg","modelImg"]
 showSlides(1, 0);
 showSlides(1, 1);
 
