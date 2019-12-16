@@ -25,14 +25,21 @@
 	.button2:hover{
 		background: #3a90b5	
 	}
-	
+	.button3{
+		border: 5px solid #8d6994;	
+	}
+	.button3:hover{
+		background: #bc93c4;	
+	}
 	#art{
 		display: none;
 	}
 	#animation{
 		display: none;
 	}
-	/* Slideshow container */
+	#model{
+		display: none;	
+	}
 .slideshow {
 	align-content: center;
   position: center;
@@ -42,10 +49,8 @@
 	video{
 		border: solid;
 	}
-/* Hide the images by default */
-.mySlides1, .mySlides2 {display: none}
+.picImg, .aniImg, .modelImg {display: none}
 
-/* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   top: 50%;
@@ -200,7 +205,7 @@ color: white;
 	</div>
 
 </div>
-<button class="button button1">Models</button>
+<button class="button button3">Models</button>
 <div id="model">
 	<div class="slideshow" align="center">
 	<a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
@@ -240,10 +245,20 @@ color: white;
 			images.style.display = "none";
 		}
 	}
-var slideIndex = [1,1];
+	function modelling() {
+		var images = document.getElementById("model");
+		if (images.style.display === "none") {
+			images.style.display = "block";
+		}else{
+			images.style.display = "none";	
+		}
+		
+	}
+var slideIndex = [1,1,1];
 var slideId = ["picImg", "aniImg","modelImg"]
 showSlides(1, 0);
 showSlides(1, 1);
+showSlides(1, 2);
 
 function plusSlides(n, no) {
   showSlides(slideIndex[no] += n, no);
